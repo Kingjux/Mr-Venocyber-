@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Venocyber projects</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #ff0000;
+      text-align: center;
+      font-family: "Courier New", monospace;
+    }
+
+    h1 {
+      color: #f00;
+      font-size: 36px;
+    }
+
+    .image-container {
+      margin-top: 20px;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 50%;
+    }
+
+    .story {
+      margin: 20px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .audio-controls {
+      margin-top: 20px;
+    }
+
+    .hacker-button {
+      background-color: #000;
+      color: #f00;
+      border: 2px solid #f00;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .hacker-button:hover {
+      background-color: #f00;
+      color: #fff;
+    }
+
+    .contact-details {
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    .copyright {
+      margin-top: 20px;
+      color: #fff;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      const audio = new Audio('jchrist.mp3');
+      const playButton = document.getElementById('play-btn');
+      const stopButton = document.getElementById('stop-btn');
+
+      playButton.addEventListener('click', () => {
+        audio.play();
+      });
+
+      stopButton.addEventListener('click', () => {
+        audio.pause();
+        audio.currentTime = 0;
+      });
+    };
+
+    document.addEventListener('contextmenu', event => event.preventDefault()); // Disable right-click context menu
+    document.onkeydown = function (e) { // Disable copy, cut, and paste
+      if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85)) {
+        return false;
+      } else {
+        return true;
+      }
+    };
+  </script>
+</head>
+<body>
+  <h1>VENOCYBER TECH INFO</h1>
+
+  <div class="image-container">
+    <img src="venocyber.jpg" alt="venocyber hacker">
+  </div>
+
+  <div class="story">
+    <h2>The Venocyber innovation team hacking, designing, cloning, developing and Coding</h2>
+    <p>The Venocyber admin is renowned for their exceptional abilities and Sharingan eye technique. In the world of coding, we strive to develop our own unique skills and techniques, just like the Venocyber innovation team.</p>
+    <p>Programming and developing, like the apps cracking, allow us to perceive and understand the intricacies of technology. With each line of code we write, we unlock new possibilities and shape the digital world around us.</p>
+    <p>As the Venocyber innovation team sought to protect and advance their abilities, we, as developers, aim to use our coding skills to create innovative solutions, build amazing projects, and contribute to the ever-evolving field of technology.</p>
+  </div>
+
+  <div class="audio-controls">
+    <button id="play-btn" class="hacker-button">Play</button>
+    <button id="stop-btn" class="hacker-button">Stop</button>
+  </div>
+
+  <div class="contact-details">
+    <p>Contact me: <a href="https://wa.me/255698101622" style="color: #f00;">WhatsApp: +255698101622</a></p>
+    <p>GitHub: <a href="https://github.com/Kingjux" style="color: #f00;">github.com/Kingjux</a></p>
+    <p>Telegram: <a href="https://t.me/Kingjux" style="color: #f00;">t.me/Kingjux</a></p>
+    <p>WhatsApp Channel: <a href="https://whatsapp.com/channel/0029VaJmfmTDJ6H7CmuBss0o" style="color: #f00;">Gifted-Venocyber whatsapp Channel</a></p>
+    <p>WhatsApp Group: <a href="https://chat.whatsapp.com/HSln3blDuuuKvC8njxyCCN" style="color: #f00;">VENOCYBER INNOVATION TEAM whatsapp Group</a></p>
+  </div>
+
+  <div class="copyright">
+    <p>&copy; VENOCYBER 2024</p>
+    <p>The song belongs to <b>Lil Nas X</b> I didn't mean to do wrong.</p>
+  </div>
+</body>
+</html>
